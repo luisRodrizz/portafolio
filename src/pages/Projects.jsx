@@ -63,7 +63,7 @@ export default function Projects() {
       <div className="relative z-10 mx-auto max-w-[1380px] px-6 lg:px-10">
         {/* Hero */}
         <motion.div variants={fadeIn} className="mono mb-10 flex items-center gap-5 text-[11px] uppercase tracking-[0.32em] accent">
-          <span className="whitespace-nowrap">Work / Projects</span>
+          <span className="whitespace-nowrap">Trabajos / Proyectos</span>
           <span className="h-px flex-1 bg-gradient-to-r from-white/[0.10] to-transparent" />
         </motion.div>
 
@@ -221,9 +221,9 @@ export default function Projects() {
                 </p>
 
                 <div className="mt-5 flex flex-wrap gap-2">
-                  {project.stack.map((item) => (
+                  {project.stack.map((item, stackIndex) => (
                     <span
-                      key={item}
+                      key={`${item}-${stackIndex}`}
                       className="mono rounded-full border border-[#00f5a0]/20 bg-[#00f5a0]/[0.05] px-3 py-1 text-[12px] text-[#9fffd7]"
                     >
                       {item}

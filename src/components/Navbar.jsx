@@ -1,9 +1,11 @@
 import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLanguage } from '../context/useLanguage'
 
 export default function Navbar() {
   const location = useLocation()
   const navigate = useNavigate()
   const isHome = location.pathname === '/'
+  const { language, setLanguage, t } = useLanguage()
 
   const scrollToSection = (sectionId) => {
     const doScroll = () => {
@@ -11,10 +13,7 @@ export default function Navbar() {
       if (!el) return
 
       const navbarOffset = 100
-      const top =
-        el.getBoundingClientRect().top +
-        window.pageYOffset -
-        navbarOffset
+      const top = el.getBoundingClientRect().top + window.pageYOffset - navbarOffset
 
       window.scrollTo({
         top,
@@ -59,7 +58,7 @@ export default function Navbar() {
                 ].join(' ')
               }
             >
-              Inicio
+              {t.nav.home}
             </NavLink>
 
             <button
@@ -67,7 +66,7 @@ export default function Navbar() {
               onClick={() => scrollToSection('about')}
               className="rounded-full px-4 py-2 text-sm text-gray-400 transition-all duration-200 hover:bg-white/[0.04] hover:text-white"
             >
-              Sobre mí
+              {t.nav.about}
             </button>
 
             <button
@@ -75,7 +74,7 @@ export default function Navbar() {
               onClick={() => scrollToSection('projects')}
               className="rounded-full px-4 py-2 text-sm text-gray-400 transition-all duration-200 hover:bg-white/[0.04] hover:text-white"
             >
-              Trabajo
+              {t.nav.work}
             </button>
 
             <button
@@ -83,13 +82,41 @@ export default function Navbar() {
               onClick={() => scrollToSection('contact')}
               className="rounded-full px-4 py-2 text-sm text-gray-400 transition-all duration-200 hover:bg-white/[0.04] hover:text-white"
             >
-              Contacto
+              {t.nav.contact}
             </button>
           </div>
 
-          <div className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/[0.02] px-4 py-2 md:flex">
-            <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#00F5A0]" />
-            <span className="text-sm text-gray-200">Disponible para trabajar</span>
+          <div className="hidden items-center gap-3 md:flex">
+            <div className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/[0.02] px-4 py-2 lg:flex">
+              <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-[#00F5A0]" />
+              <span className="text-sm text-gray-200">{t.nav.availability}</span>
+            </div>
+
+            <div className="flex items-center rounded-full border border-white/10 bg-white/[0.03] p-1">
+              <button
+                type="button"
+                onClick={() => setLanguage('es')}
+                className={
+                  language === 'es'
+                    ? 'rounded-full bg-[#00f5a0]/10 px-3 py-1.5 text-xs font-medium text-[#00f5a0]'
+                    : 'rounded-full px-3 py-1.5 text-xs font-medium text-gray-400 transition hover:text-white'
+                }
+              >
+                ES
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setLanguage('en')}
+                className={
+                  language === 'en'
+                    ? 'rounded-full bg-[#00f5a0]/10 px-3 py-1.5 text-xs font-medium text-[#00f5a0]'
+                    : 'rounded-full px-3 py-1.5 text-xs font-medium text-gray-400 transition hover:text-white'
+                }
+              >
+                EN
+              </button>
+            </div>
           </div>
         </div>
       </nav>
