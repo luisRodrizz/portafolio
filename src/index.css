@@ -1,1 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;700&display=swap');
 @import "tailwindcss";
+
+:root {
+  --bg: #05070a;
+  --bg-soft: #0a0f12;
+  --surface: rgba(10, 15, 18, 0.72);
+  --surface-strong: #0c1116;
+  --border: rgba(255, 255, 255, 0.08);
+
+  --text: #edf2f7;
+  --muted: #95a1b2;
+
+  --accent: #00f5a0;
+  --accent-2: #00d9ff;
+  --accent-soft: rgba(0, 245, 160, 0.08);
+  --accent-border: rgba(0, 245, 160, 0.18);
+  --accent-glow: rgba(0, 245, 160, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 245, 160, 0.08), transparent 28%),
+    radial-gradient(circle at 85% 30%, rgba(0, 217, 255, 0.06), transparent 24%),
+    linear-gradient(180deg, #040608 0%, #05070a 100%);
+  color: var(--text);
+  font-family: 'Inter Tight', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background: rgba(0, 245, 160, 0.18);
+  color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #05070a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 245, 160, 0.20);
+  border-radius: 999px;
+}
+
+.bg-site {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 245, 160, 0.08), transparent 28%),
+    radial-gradient(circle at 85% 30%, rgba(0, 217, 255, 0.05), transparent 24%),
+    linear-gradient(180deg, #040608 0%, #05070a 100%);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.accent-glow {
+  color: var(--accent);
+  text-shadow:
+    0 0 10px rgba(0, 245, 160, 0.16),
+    0 0 24px rgba(0, 245, 160, 0.10);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.glass {
+  background: rgba(10, 15, 18, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+.pill-accent {
+  background: rgba(0, 245, 160, 0.08);
+  border: 1px solid rgba(0, 245, 160, 0.16);
+  color: var(--accent);
+}
+
+.soft-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, #00d68f 0%, #00f5a0 100%);
+  color: #02110b;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(0, 245, 160, 0.16);
+  transition: all 0.25s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 36px rgba(0, 245, 160, 0.22);
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  transition: all 0.25s ease;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(0, 245, 160, 0.16);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 92%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 92%);
+}
+
+.display-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.section-copy {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.page-enter {
+  animation: pageEnter 0.45s ease forwards;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
