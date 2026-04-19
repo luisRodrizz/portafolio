@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import Footer from '../components/Footer'
-import foto from '../assets/Foto.png'
+import foto from '../assets/Foto2.png'
 import { useLanguage } from '../context/useLanguage'
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
