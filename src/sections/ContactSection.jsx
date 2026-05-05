@@ -1,6 +1,7 @@
+import { useState } from 'react'
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
-
+import { Copy, Check } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
 import { useLanguage } from '../context/useLanguage'
 import { fadeUp, staggerContainer } from '../utils/animations'
@@ -8,6 +9,20 @@ import { fadeUp, staggerContainer } from '../utils/animations'
 export default function ContactSection() {
   const { t } = useLanguage()
   const homeContact = t.home.contact
+  const [copied, setCopied] = useState(false)
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(homeContact.email)
+      setCopied(true)
+
+      setTimeout(() => {
+        setCopied(false)
+      }, 1800)
+    } catch {
+      window.location.href = `mailto:${homeContact.email}`
+    }
+  }
 
   return (
     <motion.section
@@ -64,6 +79,27 @@ export default function ContactSection() {
             >
               {homeContact.email}
             </a>
+          </motion.div>
+
+          <motion.div variants={fadeUp} className="mt-5">
+            <button
+              type="button"
+              onClick={copyEmail}
+              aria-live="polite"
+              className="secondary-btn inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full px-5 py-3 text-[14px] sm:min-h-[50px] sm:px-6"
+            >
+              {copied ? (
+                <>
+                  <Check className="h-4 w-4 text-[#00f5a0]" />
+                  {homeContact.copiedEmail}
+                </>
+              ) : (
+                <>
+                  <Copy className="h-4 w-4" />
+                  {homeContact.copyEmail}
+                </>
+              )}
+            </button>
           </motion.div>
 
           <motion.div

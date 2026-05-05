@@ -171,6 +171,8 @@ export const translations = {
             description:
                 'Estoy buscando oportunidades para crecer como desarrollador. Si tienes un proyecto, una práctica o una oportunidad laboral, me encantará conversar contigo.',
             email: 'luiisrodriguezguevara@gmail.com',
+            copyEmail: 'Copiar email',
+            copiedEmail: 'Email copiado',
             github: 'GitHub',
             linkedin: 'LinkedIn',
             whatsapp: 'WhatsApp',
@@ -574,6 +576,8 @@ export const translations = {
         description:
             'I am looking for opportunities to grow as a developer. If you have a project, an internship, or a job opportunity, I would love to talk with you.',
         email: 'luiisrodriguezguevara@gmail.com',
+        copyEmail: 'Copy email',
+        copiedEmail: 'Email copied',
         github: 'GitHub',
         linkedin: 'LinkedIn',
         whatsapp: 'WhatsApp',

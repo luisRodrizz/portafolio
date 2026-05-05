@@ -2,7 +2,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 
-import foto from '../assets/Foto2.png'
+import foto from '../assets/Foto.webp'
 import { useLanguage } from '../context/useLanguage'
 import { fadeUp, scaleIn, staggerContainer } from '../utils/animations'
 
@@ -99,7 +99,8 @@ export default function HeroSection() {
               <a
                 href="/Luis-Rodriguez-CV.pdf"
                 download
-                className="secondary-btn inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full px-6 py-4 text-[14px] sm:min-w-[180px] sm:w-auto sm:px-8 sm:text-[15px]"
+                aria-label={t.home.hero.downloadCv}
+                className="secondary-btn inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full px-6 py-4 text-[14px] sm:w-auto sm:px-7 sm:text-[15px]"
               >
                 {t.home.hero.downloadCv} <span>↓</span>
               </a>
