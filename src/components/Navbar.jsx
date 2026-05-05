@@ -57,7 +57,7 @@ export default function Navbar() {
       const el = document.getElementById(sectionId)
       if (!el) return
 
-      const navbarOffset = 100
+      const navbarOffset = 40
       const top =
         el.getBoundingClientRect().top + window.pageYOffset - navbarOffset
 

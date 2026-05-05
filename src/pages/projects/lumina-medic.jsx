@@ -7,6 +7,7 @@ import ProjectProblemSolution from '../../components/project-detail/ProjectProbl
 import ProjectGallery from '../../components/project-detail/ProjectGallery'
 import ProjectArchitecture from '../../components/project-detail/ProjectArchitecture'
 import ProjectHero from '../../components/project-detail/ProjectHero'
+import ProjectCaseStudy from '../../components/project-detail/ProjectCaseStudy'
 import dashboardImg from '../../assets/proyect/luminaMedic/dashboard.png'
 import doctorImg from '../../assets/proyect/luminaMedic/doctor.png'
 import loginImg from '../../assets/proyect/luminaMedic/login.png'
@@ -47,14 +48,12 @@ export default function LuminaMedic() {
           </motion.div>
 
           <ProjectHero content={content} />
-
           <ProjectGallery content={content} items={gallery} />
-
           <ProjectProblemSolution data={content.problemSolution} />
-
+          <ProjectCaseStudy data={content.caseStudy} />
           <ProjectFeatures data={content.features} />
-
           <ProjectArchitecture data={content.architecture} />
+          
         </div>
       </motion.main>
 

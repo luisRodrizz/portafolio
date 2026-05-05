@@ -38,7 +38,7 @@ export default function Footer() {
       const el = document.getElementById(sectionId)
       if (!el) return
 
-      const footerOffset = 100
+      const footerOffset = 40
       const top = el.getBoundingClientRect().top + window.pageYOffset - footerOffset
 
       window.scrollTo({
@@ -132,6 +132,14 @@ export default function Footer() {
                   className="text-sm text-[#c7d2dc] transition hover:text-white lg:text-left"
                 >
                   {footer.projects}
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => scrollToSection('education')}
+                  className="text-sm text-[#c7d2dc] transition hover:text-white lg:text-left"
+                >
+                  {footer.education}
                 </button>
 
                 <button

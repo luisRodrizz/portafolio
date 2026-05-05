@@ -39,33 +39,33 @@ export const translations = {
           },
           {
             n: '2',
-            text: 'Me apasiona la programación y mi meta es convertirme en Full Stack Developer — manejo tanto el frontend como el backend.',
+            text: 'Me enfoco en el desarrollo web full stack, construyendo interfaces modernas y backend funcional para sistemas reales.',
           },
           {
             n: '3',
-            text: 'Mi stack incluye React.js, Inertia.js, Laravel, PHP, Node.js y Python, con bases de datos usando Prisma y Eloquent.',
+            text: 'Trabajo con tecnologías como React, Next.js, Tailwind CSS, Node.js, Express, PHP, Laravel, PostgreSQL y Prisma.',
           },
           {
             n: '4',
-            text: 'Ya tengo 1 proyecto desplegado y busco oportunidades reales para demostrar mi capacidad trabajando en empresas.',
+            text: 'He desarrollado y desplegado un sistema clínico completo, además de trabajar en proyectos como AgroVision y una plataforma e-commerce en desarrollo.',
           },
           {
             n: '5',
-            text: 'Basado en Lima, Perú — disponible para prácticas, trabajo remoto o proyectos freelance.',
+            text: 'Busco oportunidades para seguir creciendo como desarrollador, aportar en equipos reales y mejorar mi criterio técnico con proyectos de mayor impacto.',
           },
         ],
         skills: [
           {
             category: 'Frontend',
-            items: ['React.js', 'Inertia.js', 'JavaScript'],
+            items: ['React', 'Next.js', 'Tailwind CSS', 'HTML5', 'CSS3', 'JavaScript'],
           },
           {
             category: 'Backend',
-            items: ['Laravel', 'PHP', 'Node.js', 'Python'],
+            items: ['Node.js', 'Express.js', 'PHP', 'Laravel', 'Python'],
           },
           {
             category: 'Base de datos & ORM',
-            items: ['PostgreSQL', 'Prisma', 'Eloquent'],
+            items: ['PostgreSQL', 'MySQL', 'Prisma', 'Redis'],
           },
         ],
       },
@@ -309,6 +309,32 @@ export const translations = {
             },
         },
 
+        caseStudy: {
+            title: 'Más allá de la interfaz',
+            description:
+                'Lúmina Medic no solo fue construido como una aplicación visual, sino como un sistema con lógica operativa, validaciones reales y decisiones técnicas orientadas a mantener una experiencia estable para distintos roles.',
+            items: [
+                {
+                label: 'Reto técnico',
+                title: 'Gestión de horarios y citas sin cruces',
+                text:
+                    'El sistema debía evitar solapamientos entre citas, respetar disponibilidad médica y controlar bloqueos de horario, manteniendo una experiencia clara para administrador, doctor y paciente.',
+                },
+                {
+                label: 'Decisión técnica',
+                title: 'Arquitectura frontend/backend desacoplada',
+                text:
+                    'Separé el frontend en React y el backend en Node.js/Express para mantener responsabilidades claras, facilitar el despliegue independiente y mejorar la escalabilidad del sistema.',
+                },
+                {
+                label: 'Aprendizaje',
+                title: 'Pensar en flujos reales de negocio',
+                text:
+                    'El proyecto me permitió trabajar con validaciones, roles, estados, reportes, historial clínico y automatizaciones, acercándome a problemas similares a los de un entorno real.',
+                },
+            ],
+        },
+
         features: {
             title: 'Funcionalidades clave',
             description:
@@ -391,6 +417,7 @@ export const translations = {
         navigation: 'Navegación',
         about: 'Sobre mí',
         projects: 'Proyectos',
+        education: 'Formación',
         contact: 'Contacto',
         projectsTitle: 'Proyectos',
         viewAll: 'Ver todos',
@@ -442,33 +469,33 @@ export const translations = {
           },
           {
             n: '2',
-            text: 'I am passionate about programming and my goal is to become a Full Stack Developer — handling both frontend and backend.',
+            text: 'I focus on full-stack web development, building modern interfaces and functional backend systems for real-world applications.',
           },
           {
             n: '3',
-            text: 'My stack includes React.js, Inertia.js, Laravel, PHP, Node.js, and Python, with databases using Prisma and Eloquent.',
+            text: 'I work with technologies such as React, Next.js, Tailwind CSS, Node.js, Express, PHP, Laravel, PostgreSQL, and Prisma.',
           },
           {
             n: '4',
-            text: 'I already have 1 deployed project and I am looking for real opportunities to prove my skills working in companies.',
+            text: 'I have developed and deployed a complete clinical management system, while also working on projects such as AgroVision and an e-commerce platform in development.',
           },
           {
             n: '5',
-            text: 'Based in Lima, Peru — available for internships, remote work, or freelance projects.',
+            text: 'I am looking for opportunities to keep growing as a developer, contribute to real teams, and improve my technical judgment through higher-impact projects.',
           },
         ],
         skills: [
           {
             category: 'Frontend',
-            items: ['React.js', 'Inertia.js', 'JavaScript'],
+            items: ['React', 'Next.js', 'Tailwind CSS', 'HTML5', 'CSS3', 'JavaScript'],
           },
           {
             category: 'Backend',
-            items: ['Laravel', 'PHP', 'Node.js', 'Python'],
+            items: ['Node.js', 'Express.js', 'PHP', 'Laravel', 'Python'],
           },
           {
             category: 'Database & ORM',
-            items: ['PostgreSQL', 'Prisma', 'Eloquent'],
+            items: ['PostgreSQL', 'MySQL', 'Prisma', 'Redis'],
           },
         ],
       },
@@ -714,6 +741,32 @@ export const translations = {
             },
         },
 
+        caseStudy: {
+            title: 'Beyond the interface',
+            description:
+                'Lúmina Medic was not built only as a visual application, but as a system with operational logic, real validations, and technical decisions focused on keeping a stable experience for different roles.',
+            items: [
+                {
+                label: 'Technical challenge',
+                title: 'Managing schedules and appointments without conflicts',
+                text:
+                    'The system had to prevent appointment overlaps, respect doctor availability, and handle schedule blocks while keeping a clear experience for administrators, doctors, and patients.',
+                },
+                {
+                label: 'Technical decision',
+                title: 'Decoupled frontend/backend architecture',
+                text:
+                    'I separated the frontend in React and the backend in Node.js/Express to keep responsibilities clear, support independent deployment, and improve the system’s scalability.',
+                },
+                {
+                label: 'Learning outcome',
+                title: 'Thinking through real business workflows',
+                text:
+                    'This project helped me work with validations, roles, states, reports, medical history, and automation, bringing me closer to problems similar to a real production environment.',
+                },
+            ],
+        },
+
         features: {
             title: 'Key features',
             description:
@@ -796,6 +849,7 @@ export const translations = {
         navigation: 'Navigation',
         about: 'About',
         projects: 'Projects',
+        education: 'Education',
         contact: 'Contact',
         projectsTitle: 'Projects',
         viewAll: 'View all',
