@@ -4,6 +4,7 @@ export const translations = {
       home: 'Inicio',
       about: 'Sobre mí',
       work: 'Trabajo',
+      education: 'Formación',
       contact: 'Contacto',
       availability: 'Disponible para trabajar',
     },
@@ -13,23 +14,24 @@ export const translations = {
         titleFirst: 'Luis',
         titleAccent: 'Rodríguez',
         subtitle:
-          'Desarrollo interfaces modernas y backend funcional. Busco convertir ideas reales en productos web.',
+          'Construyo aplicaciones web full stack con interfaces limpias, lógica backend sólida y flujos reales de negocio.',
         primaryCta: 'Ver proyectos',
         secondaryCta: 'Contactarme',
+        downloadCv: 'Descargar CV',
         location: 'Lima, Perú',
         status: 'Disponible',
       },
       stats: [
         { value: '9+', label: 'Tecnologías' },
-        { value: '1', label: 'Proyecto desplegado' },
+        { value: '1', label: 'Sistema desplegado' },
         { value: '5to', label: 'Ciclo SENATI' },
       ],
       about: {
         eyebrow: '01 — Sobre mí',
-        titleFirst: 'Código con',
-        titleAccent: 'ambición.',
+        titleFirst: 'Código orientado',
+        titleAccent: 'a producto.',
         description:
-          'Estudiante de software en Lima. Me enfoco en construir, aprender rápido y ganar experiencia real en equipos de alto nivel.',
+          'Estudiante de Ingeniería de Software en Lima. Me enfoco en construir soluciones web funcionales, aprender rápido y aplicar buenas prácticas en proyectos reales.',
         items: [
           {
             n: '1',
@@ -69,8 +71,8 @@ export const translations = {
       },
       projects: {
         eyebrow: '02 — Proyectos',
-        titleFirst: 'Trabajos',
-        titleAccent: 'reales.',
+        titleFirst: 'Proyectos',
+        titleAccent: 'funcionales.',
         description:
             'Una selección de proyectos donde combiné diseño, frontend y backend para construir productos web funcionales, con lógica de negocio real y enfoque en experiencia de usuario.',
         viewAll: 'Ver todos los proyectos',
@@ -96,26 +98,73 @@ export const translations = {
         },
 
         secondary: [
-            {
-                id: 'next-project-1',
-                label: 'Proyecto',
-                title: 'Próximamente',
-                description:
-                'Aquí irá otro proyecto donde pueda mostrar diseño, lógica de negocio y experiencia completa de desarrollo.',
-                stack: ['Frontend', 'Backend'],
-            },
-            {
-                id: 'next-project-2',
-                label: 'Proyecto',
-                title: 'Próximamente',
-                description:
-                'Espacio reservado para seguir construyendo productos y ampliar el portafolio con más casos reales.',
-                stack: ['Web App', 'Full Stack'],
-            },
-        ]
+        {
+            id: 'agrovision',
+            label: 'Proyecto en desarrollo',
+            status: 'En progreso',
+            title: 'AgroVision',
+            description:
+            'Sistema web orientado a la gestión agrícola, desarrollado con Laravel y PostgreSQL, enfocado en organizar información operativa y mejorar el control de procesos del campo.',
+            stack: ['Laravel', 'PHP', 'PostgreSQL', 'Tailwind CSS'],
+        },
+        {
+            id: 'ecommerce-platform',
+            label: 'Proyecto en desarrollo',
+            status: 'Fase inicial',
+            title: 'E-commerce Platform',
+            description:
+            'Plataforma e-commerce en etapa beta, construida con arquitectura moderna con paneles administrativos y experiencia de usuario optimizada.',
+            stack: ['Next.js', 'Node.js', 'Express', 'Docker', 'PostgreSQL'],
+        },
+       ]
       },
+        education: {
+        eyebrow: '03 — Formación',
+        titleFirst: 'Formación técnica',
+        titleAccent: 'en progreso.',
+        description:
+            'Estudio Ingeniería de Software en SENATI y complemento mi aprendizaje con proyectos full stack, cursos técnicos y práctica constante construyendo sistemas web reales.',
+        academicTitle: 'Formación académica',
+        coursesTitle: 'Cursos y certificaciones',
+        academic: [
+            {
+            institution: 'SENATI',
+            program: 'Ingeniería de Software',
+            period: '2024 — Actualidad',
+            meta: '5to ciclo',
+            },
+            {
+            institution: 'I.E. 2094 Inca Pachacutec',
+            program: 'Educación secundaria',
+            period: '2019 — 2023',
+            meta: 'Formación escolar',
+            },
+        ],
+        courses: [
+            {
+            provider: 'Cisco Networking Academy',
+            name: 'Introducción a la Ciencia de Datos',
+            },
+            {
+            provider: 'Cisco Networking Academy',
+            name: 'Introducción al Internet de las Cosas',
+            },
+            {
+            provider: 'Cisco Networking Academy',
+            name: 'Conceptos Básicos de Hardware de Computadora',
+            },
+            {
+            provider: 'Cisco Networking Academy',
+            name: 'Conceptos básicos de redes',
+            },
+            {
+            provider: 'Cisco Networking Academy',
+            name: 'Introducción a la Ciberseguridad',
+            },
+          ],
+        },
         contact: {
-            eyebrow: '03 — Contacto',
+            eyebrow: '04 — Contacto',
             badge: 'Disponible para prácticas · remoto · freelance',
             titleFirst: 'Trabajemos',
             titleAccent: 'juntos.',
@@ -160,25 +209,25 @@ export const translations = {
         moreProjectsText: 'Seguiré ampliando esta colección con nuevos trabajos.',
 
         secondary: [
-            {
-            id: 'next-project-1',
-            title: 'Próximamente',
-            type: 'En desarrollo',
+        {
+            id: 'agrovision',
+            title: 'AgroVision',
+            type: 'Proyecto en desarrollo',
             status: 'En progreso',
             description:
-                'Espacio reservado para un próximo proyecto donde seguiré mostrando lógica de negocio, diseño y desarrollo full stack.',
-            stack: ['Frontend', 'Backend'],
-            },
-            {
-            id: 'next-project-2',
-            title: 'Próximamente',
-            type: 'En desarrollo',
-            status: 'En progreso',
+            'Sistema web orientado a la gestión agrícola, desarrollado con Laravel, PHP, PostgreSQL y Tailwind CSS. Actualmente se encuentra en desarrollo y será incorporado como caso de estudio cuando esté más completo.',
+            stack: ['Laravel', 'PHP', 'PostgreSQL', 'Tailwind CSS'],
+        },
+        {
+            id: 'ecommerce-platform',
+            title: 'E-commerce Platform',
+            type: 'Proyecto beta',
+            status: 'Fase inicial',
             description:
-                'Otro espacio para ampliar el portafolio con nuevas soluciones web y casos reales.',
-            stack: ['Web App', 'Full Stack'],
-            },
-        ],
+            'Plataforma e-commerce en fase beta construida con Next.js, Node.js, Express, Docker, PostgreSQL y Tailwind CSS, enfocada en una arquitectura full stack moderna.',
+            stack: ['Next.js', 'Node.js', 'Express', 'Docker', 'PostgreSQL', 'Tailwind CSS'],
+        },
+      ],
     },
     luminaMedic: {
         eyebrow: 'Proyecto destacado',
@@ -356,6 +405,7 @@ export const translations = {
       home: 'Home',
       about: 'About',
       work: 'Work',
+      education: 'Education',
       contact: 'Contact',
       availability: 'Available for work',
     },
@@ -365,23 +415,24 @@ export const translations = {
         titleFirst: 'Luis',
         titleAccent: 'Rodriguez',
         subtitle:
-          'I build modern interfaces and functional backend systems. I aim to turn real ideas into web products.',
+          'I build full-stack web applications with clean interfaces, solid backend logic, and real business workflows.',
         primaryCta: 'View projects',
         secondaryCta: 'Contact me',
+        downloadCv: 'Download CV',
         location: 'Lima, Peru',
         status: 'Available',
       },
       stats: [
         { value: '9+', label: 'Technologies' },
-        { value: '1', label: 'Live project' },
+        { value: '1', label: 'Deployed system' },
         { value: '5th', label: 'SENATI semester' },
       ],
       about: {
         eyebrow: '01 — About me',
-        titleFirst: 'Coding with',
-        titleAccent: 'ambition.',
+        titleFirst: 'Product-driven',
+        titleAccent: 'code.',
         description:
-          'Software student based in Lima. Focused on building, fast learning, and gaining real-world experience within high-performing teams.',
+          'Software Engineering student based in Lima. Focused on building functional web solutions, learning fast, and applying good practices in real projects.',
         items: [
           {
             n: '1',
@@ -421,7 +472,7 @@ export const translations = {
       },
       projects: {
         eyebrow: '02 — Projects',
-        titleFirst: 'Actual',
+        titleFirst: 'Functional',
         titleAccent: 'projects.',
         description:
             'A selection of projects where I combined design, frontend, and backend to build functional web products with real business logic and a user-focused experience.',
@@ -448,26 +499,75 @@ export const translations = {
         },
 
         secondary: [
-            {
-                id: 'next-project-1',
-                label: 'Project',
-                title: 'Coming soon',
-                description:
-                'Another project will go here to showcase design, business logic, and a complete development process.',
-                stack: ['Frontend', 'Backend'],
-            },
-            {
-                id: 'next-project-2',
-                label: 'Project',
-                title: 'Coming soon',
-                description:
-                'Reserved space to keep building products and expand the portfolio with more real cases.',
-                stack: ['Web App', 'Full Stack'],
-            },
-        ],
+        {
+            id: 'agrovision',
+            label: 'Project in development',
+            status: 'In progress',
+            title: 'AgroVision',
+            description:
+            'Agricultural management web system built with Laravel and PostgreSQL, focused on organizing operational data and improving field process control.',
+            stack: ['Laravel', 'PHP', 'PostgreSQL', 'Tailwind CSS'],
+        },
+        {
+            id: 'ecommerce-platform',
+            label: 'Beta project',
+            status: 'Early stage',
+            title: 'E-commerce Platform',
+            description:
+            'E-commerce platform in beta stage, built with a modern architecture using Next.js, Node.js, Express, Docker, and PostgreSQL.',
+            stack: ['Next.js', 'Node.js', 'Express', 'Docker', 'PostgreSQL', 'Tailwind CSS'],
+        },
+       ],
       },
+
+    education: {
+    eyebrow: '03 — Education',
+    titleFirst: 'Technical growth',
+    titleAccent: 'in progress.',
+    description:
+        'I study Software Engineering at SENATI and strengthen my learning through full-stack projects, technical courses, and constant practice building real web systems.',
+    academicTitle: 'Academic background',
+    coursesTitle: 'Courses and certifications',
+    academic: [
+        {
+        institution: 'SENATI',
+        program: 'Software Engineering',
+        period: '2024 — Present',
+        meta: '5th semester',
+        },
+        {
+        institution: 'I.E. 2094 Inca Pachacutec',
+        program: 'Secondary education',
+        period: '2019 — 2023',
+        meta: 'School education',
+        },
+    ],
+    courses: [
+        {
+        provider: 'Cisco Networking Academy',
+        name: 'Introduction to Data Science',
+        },
+        {
+        provider: 'Cisco Networking Academy',
+        name: 'Introduction to Internet of Things',
+        },
+        {
+        provider: 'Cisco Networking Academy',
+        name: 'Computer Hardware Basics',
+        },
+        {
+        provider: 'Cisco Networking Academy',
+        name: 'Networking Basics',
+        },
+        {
+        provider: 'Cisco Networking Academy',
+        name: 'Introduction to Cybersecurity',
+        },
+      ],    
+    },
+
       contact: {
-        eyebrow: '03 — Contact',
+        eyebrow: '04 — Contact',
         badge: 'Available for internships · remote · freelance',
         titleFirst: 'Let’s work',
         titleAccent: 'together.',
@@ -512,25 +612,25 @@ export const translations = {
         moreProjectsText: 'I will keep expanding this collection with new work.',
 
         secondary: [
-            {
-            id: 'next-project-1',
-            title: 'Coming soon',
-            type: 'In development',
-            status: 'Work in progress',
+        {
+            id: 'agrovision',
+            label: 'Project in development',
+            status: 'In progress',
+            title: 'AgroVision',
             description:
-                'Reserved space for a future project where I will continue showcasing business logic, design, and full stack development.',
-            stack: ['Frontend', 'Backend'],
-            },
-            {
-            id: 'next-project-2',
-            title: 'Coming soon',
-            type: 'In development',
-            status: 'Work in progress',
+            'Agricultural management web system built with Laravel and PostgreSQL, focused on organizing operational data and improving field process control.',
+            stack: ['Laravel', 'PHP', 'PostgreSQL', 'Tailwind CSS'],
+        },
+        {
+            id: 'ecommerce-platform',
+            label: 'Beta project',
+            status: 'Early stage',
+            title: 'E-commerce Platform',
             description:
-                'Another space to expand the portfolio with new web solutions and real cases.',
-            stack: ['Web App', 'Full Stack'],
-            },
-        ],
+            'E-commerce platform in beta stage, built with a modern architecture using Next.js, Node.js, Express, Docker, and PostgreSQL.',
+            stack: ['Next.js', 'Node.js', 'Express', 'Docker', 'PostgreSQL'],
+        },
+      ]
     },
     luminaMedic: {
         eyebrow: 'Featured project',
