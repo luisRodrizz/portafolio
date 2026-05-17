@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import SectionHeader from '../components/SectionHeader'
 import ProjectMiniCard from '../components/ProjectMiniCard'
 import FeaturedProjectCard from '../components/FeaturedProjectCard'
-import luminaDashboard from '../assets/proyect/luminaMedic/doctor.png'
+import luminaDashboard from '../assets/proyect/luminaMedic/dashboard.png'
 import { useLanguage } from '../context/useLanguage'
 import { fadeUp, staggerContainer } from '../utils/animations'
 
