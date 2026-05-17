@@ -161,7 +161,7 @@ export default function Navbar() {
 
             <div className="leading-none">
               <p className="text-[15px] font-bold tracking-tight text-white">
-                luis<span className="accent">.</span>dev
+                luisrdz<span className="accent">.</span>dev
               </p>
             </div>
           </button>

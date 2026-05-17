@@ -270,30 +270,42 @@ export const translations = {
             next: 'Imagen siguiente',
             items: [
             {
-                id: 'dashboard',
-                title: 'Dashboard administrativo',
+                id: 'landing',
+                title: 'Landing pública',
                 description:
-                'Vista principal del panel administrador con métricas, resumen mensual, citas del día y gráficos operativos.',
-            },
-            {
-                id: 'doctor',
-                title: 'Panel del doctor',
-                description:
-                'Vista orientada al médico con acceso a citas, pacientes asignados, agenda y seguimiento clínico.',
+                    'Página de presentación de Lúmina Medic enfocada en comunicar la propuesta de valor, confianza médica y acceso al sistema.',
             },
             {
                 id: 'login',
-                title: 'Inicio de sesión',
+                title: 'Acceso al sistema',
                 description:
-                'Pantalla de acceso al sistema con autenticación para administrador, doctor y paciente.',
+                    'Pantalla de inicio de sesión con identidad visual institucional, acceso seguro y experiencia clara para usuarios del sistema.',
             },
             {
-                id: 'perfil',
-                title: 'Perfil del paciente',
+                id: 'dashboard',
+                title: 'Dashboard administrativo',
                 description:
-                'Módulo donde el usuario puede revisar y actualizar su información personal dentro del sistema.',
+                    'Vista general del sistema clínico con métricas operativas, estado de citas, ingresos, pacientes, doctores y actividad principal del panel administrativo.',
             },
-            ],
+            {
+                id: 'doctores',
+                title: 'Gestión de doctores',
+                description:
+                    'Módulo administrativo para registrar, visualizar y controlar doctores, especialidades, estado de actividad y datos principales del personal médico.',
+            },
+            {
+                id: 'citas',
+                title: 'Gestión de citas',
+                description:
+                    'Panel para administrar citas médicas, pacientes, doctores, servicios, estados de atención y acciones operativas del sistema.',
+            },
+            {
+                id: 'configuracion',
+                title: 'Configuración clínica',
+                description:
+                    'Vista de configuración institucional para administrar la identidad visual, datos generales y parámetros principales de la clínica.',
+            },
+          ],
         },
 
         problemSolution: {
@@ -702,30 +714,42 @@ export const translations = {
             next: 'Next image',
             items: [
             {
-                id: 'dashboard',
-                title: 'Admin dashboard',
+                id: 'landing',
+                title: 'Public landing page',
                 description:
-                'Main administrator panel view with metrics, monthly summary, daily appointments and operational charts.',
-            },
-            {
-                id: 'doctor',
-                title: 'Doctor panel',
-                description:
-                'Doctor-oriented view with access to appointments, assigned patients, schedule and clinical follow-up.',
+                'Lúmina Medic presentation page focused on communicating the value proposition, medical trust, and access to the platform.',
             },
             {
                 id: 'login',
-                title: 'Login screen',
+                title: 'System access',
                 description:
-                'System access screen with authentication for administrator, doctor and patient.',
+                'Login screen with institutional visual identity, secure access, and a clear experience for system users.',
             },
             {
-                id: 'perfil',
-                title: 'Patient profile',
+                id: 'dashboard',
+                title: 'Admin dashboard',
                 description:
-                'Module where the user can review and update personal information within the system.',
+                'General system overview with operational metrics, appointment status, revenue, patients, doctors, and key administrative activity.',
             },
-            ],
+            {
+                id: 'doctores',
+                title: 'Doctor management',
+                description:
+                'Administrative module to register, view, and manage doctors, specialties, activity status, and key medical staff information.',
+            },
+            {
+                id: 'citas',
+                title: 'Appointment management',
+                description:
+                'Panel to manage medical appointments, patients, doctors, services, appointment statuses, and operational system actions.',
+            },
+            {
+                id: 'configuracion',
+                title: 'Clinic configuration',
+                description:
+                'Institutional configuration view to manage visual identity, general information, and key clinic settings.',
+            },
+          ],
         },
 
         problemSolution: {

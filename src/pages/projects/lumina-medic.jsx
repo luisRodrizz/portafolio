@@ -8,9 +8,11 @@ import ProjectGallery from '../../components/project-detail/ProjectGallery'
 import ProjectArchitecture from '../../components/project-detail/ProjectArchitecture'
 import ProjectHero from '../../components/project-detail/ProjectHero'
 import ProjectCaseStudy from '../../components/project-detail/ProjectCaseStudy'
-import dashboardImg from '../../assets/proyect/luminaMedic/dashboard.png'
-import doctorImg from '../../assets/proyect/luminaMedic/doctor.png'
+import landingImg from '../../assets/proyect/luminaMedic/landing.png'
 import loginImg from '../../assets/proyect/luminaMedic/login.png'
+import dashboardImg from '../../assets/proyect/luminaMedic/dashboard.png'
+import doctoresImg from '../../assets/proyect/luminaMedic/doctor.png'
+import citasImg from '../../assets/proyect/luminaMedic/citas.png'
 import perfilImg from '../../assets/proyect/luminaMedic/perfil.png'
 import { useLanguage } from '../../context/useLanguage'
 
@@ -19,10 +21,12 @@ export default function LuminaMedic() {
   const content = t.luminaMedic
 
   const gallery = [
-    { ...content.gallery.items[0], image: dashboardImg },
-    { ...content.gallery.items[1], image: doctorImg },
-    { ...content.gallery.items[2], image: loginImg },
-    { ...content.gallery.items[3], image: perfilImg },
+    { ...content.gallery.items[0], image: landingImg },
+    { ...content.gallery.items[1], image: loginImg },
+    { ...content.gallery.items[2], image: dashboardImg },
+    { ...content.gallery.items[3], image: doctoresImg },
+    { ...content.gallery.items[4], image: citasImg },
+    { ...content.gallery.items[5], image: perfilImg },
   ]
 
   return (

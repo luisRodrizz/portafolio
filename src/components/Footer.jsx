@@ -73,7 +73,7 @@ export default function Footer() {
                 <span className="mono text-[11px] font-semibold">LR</span>
               </div>
               <p className="mono text-[11px] uppercase tracking-[0.24em] text-[#7a8799]">
-                luis<span className="accent">.</span>dev
+                luisrdz<span className="accent">.</span>dev
               </p>
             </button>
 
